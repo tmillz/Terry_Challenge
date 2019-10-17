@@ -1,5 +1,5 @@
 # Actions for setting up server
-# I used AWS lightsail configuration page to set up an bare Ubuntu 18.04 server that creates automatic snapshots
+# I used AWS lightsail configuration page to set up a bare Ubuntu 18.04 server that creates automatic snapshots
 # Checked ports on networking tab and opened port 443 for Https
 # I Also installed/configured AWS Cli and am looking into how to create the same Ubuntu instance via the AWS cli
 
