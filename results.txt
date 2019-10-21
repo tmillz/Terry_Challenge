@@ -1,0 +1,11 @@
+<html> <head> <title>HelloWorld</title> </head> <body> <h1>Hello World!</h1> </body> </html>
+# Nmap 7.80 scan initiated Sun Oct 20 21:27:03 2019 as: nmap -oN results.txt --append-output -p 1-500 3.88.18.106
+Nmap scan report for ec2-3-88-18-106.compute-1.amazonaws.com (3.88.18.106)
+Host is up (0.022s latency).
+Not shown: 497 filtered ports
+PORT    STATE  SERVICE
+22/tcp  open   ssh
+80/tcp  open   http
+443/tcp closed https
+
+# Nmap done at Sun Oct 20 21:28:21 2019 -- 1 IP address (1 host up) scanned in 78.32 seconds
