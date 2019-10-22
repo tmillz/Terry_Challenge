@@ -1,0 +1,163 @@
+Terrys-MacBook-Pro:Terry_Challenge terry$ ./launchEC2.sh
+
+
+Instance ID = i-046222f90c6f9037b
+
+IP address = 34.228.238.208
+
+Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 4.15.0-1051-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Tue Oct 22 16:46:16 UTC 2019
+
+  System load:  0.13              Processes:           89
+  Usage of /:   13.6% of 7.69GB   Users logged in:     0
+  Memory usage: 25%               IP address for eth0: 172.31.36.1
+  Swap usage:   0%
+
+0 packages can be updated.
+0 updates are security updates.
+
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+Hit:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic InRelease
+Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
+Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
+Get:4 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+Get:5 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/universe amd64 Packages [8570 kB]
+Get:6 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/universe Translation-en [4941 kB]
+Get:7 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/multiverse amd64 Packages [151 kB]
+Get:8 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/multiverse Translation-en [108 kB]
+Get:9 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [764 kB]
+Get:10 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main Translation-en [273 kB]
+Get:11 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/restricted amd64 Packages [16.7 kB]
+Get:12 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/restricted Translation-en [5144 B]
+Get:13 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [1015 kB]
+Get:14 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/universe Translation-en [312 kB]
+Get:15 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 Packages [8092 B]
+Get:16 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/multiverse Translation-en [3972 B]
+Get:17 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-backports/main amd64 Packages [2512 B]
+Get:18 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-backports/main Translation-en [1644 B]
+Get:19 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-backports/universe amd64 Packages [4020 B]
+Get:20 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-backports/universe Translation-en [1856 B]
+Get:21 http://security.ubuntu.com/ubuntu bionic-security/main amd64 Packages [541 kB]
+Get:22 http://security.ubuntu.com/ubuntu bionic-security/main Translation-en [180 kB]
+Get:23 http://security.ubuntu.com/ubuntu bionic-security/restricted amd64 Packages [9856 B]
+Get:24 http://security.ubuntu.com/ubuntu bionic-security/restricted Translation-en [3480 B]
+Get:25 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 Packages [616 kB]
+Get:26 http://security.ubuntu.com/ubuntu bionic-security/universe Translation-en [205 kB]
+Get:27 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 Packages [5476 B]
+Get:28 http://security.ubuntu.com/ubuntu bionic-security/multiverse Translation-en [2500 B]
+Fetched 18.0 MB in 5s (3998 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  gamin libgamin0 spawn-fcgi
+Suggested packages:
+  rrdtool php5-cgi apache2-utils lighttpd-doc
+The following NEW packages will be installed:
+  gamin libgamin0 lighttpd spawn-fcgi
+0 upgraded, 4 newly installed, 0 to remove and 22 not upgraded.
+Need to get 350 kB of archives.
+After this operation, 1278 kB of additional disk space will be used.
+Get:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/universe amd64 libgamin0 amd64 0.1.10-5build1 [15.9 kB]
+Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/universe amd64 gamin amd64 0.1.10-5build1 [43.0 kB]
+Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 lighttpd amd64 1.4.45-1ubuntu3.18.04 [276 kB]
+Get:4 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/universe amd64 spawn-fcgi amd64 1.6.4-2 [14.9 kB]
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Fetched 350 kB in 0s (11.5 MB/s)
+Selecting previously unselected package libgamin0.
+(Reading database ... 56531 files and directories currently installed.)
+Preparing to unpack .../libgamin0_0.1.10-5build1_amd64.deb ...
+Unpacking libgamin0 (0.1.10-5build1) ...
+Selecting previously unselected package gamin.
+Preparing to unpack .../gamin_0.1.10-5build1_amd64.deb ...
+Unpacking gamin (0.1.10-5build1) ...
+Selecting previously unselected package lighttpd.
+Preparing to unpack .../lighttpd_1.4.45-1ubuntu3.18.04_amd64.deb ...
+Unpacking lighttpd (1.4.45-1ubuntu3.18.04) ...
+Selecting previously unselected package spawn-fcgi.
+Preparing to unpack .../spawn-fcgi_1.6.4-2_amd64.deb ...
+Unpacking spawn-fcgi (1.6.4-2) ...
+Setting up spawn-fcgi (1.6.4-2) ...
+Setting up gamin (0.1.10-5build1) ...
+Setting up libgamin0 (0.1.10-5build1) ...
+Setting up lighttpd (1.4.45-1ubuntu3.18.04) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/lighttpd.service → /lib/systemd/system/lighttpd.service.
+Processing triggers for systemd (237-3ubuntu10.29) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+Processing triggers for ufw (0.36-0ubuntu0.18.04.1) ...
+Processing triggers for ureadahead (0.100.0-21) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+terrychallenge.com.pem                                                                                     100% 3038   122.0KB/s   00:00    
+terrychallenge.com.pem                                                                                     100% 3038   190.5KB/s   00:00    
+terrychallenge.com.pem                                                                                     100% 3038   212.6KB/s   00:00    
+lighttpd.conf                                                                                              100% 1272    76.5KB/s   00:00    
+Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 4.15.0-1051-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Tue Oct 22 16:46:48 UTC 2019
+
+  System load:  0.5               Processes:           90
+  Usage of /:   15.7% of 7.69GB   Users logged in:     0
+  Memory usage: 25%               IP address for eth0: 172.31.36.1
+  Swap usage:   0%
+
+
+26 packages can be updated.
+15 updates are security updates.
+
+
+--2019-10-22 12:47:09--  http://34.228.238.208/
+Connecting to 34.228.238.208:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://34.228.238.208/ [following]
+--2019-10-22 12:47:09--  https://34.228.238.208/
+Connecting to 34.228.238.208:443... connected.
+    WARNING: certificate common name ‘terrychallenge.com’ doesn't match requested host name ‘34.228.238.208’.
+HTTP request sent, awaiting response... 200 OK
+Length: 93 [text/html]
+Saving to: ‘index.html’
+
+index.html                          100%[================================================================>]      93  --.-KB/s    in 0s      
+
+2019-10-22 12:47:09 (1.64 MB/s) - ‘index.html’ saved [93/93]
+
+Starting Nmap 7.80 ( https://nmap.org ) at 2019-10-22 12:47 EDT
+Nmap scan report for ec2-34-228-238-208.compute-1.amazonaws.com (34.228.238.208)
+Host is up (0.010s latency).
+Not shown: 497 filtered ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 3.40 seconds
+
+
+webpage looks good!
+
+
+
+ports look good!

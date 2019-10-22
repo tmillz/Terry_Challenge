@@ -1,0 +1,11 @@
+<html> <head> <title>HelloWorld</title> </head> <body> <h1>Hello World!</h1> </body> </html>
+# Nmap 7.80 scan initiated Tue Oct 22 12:22:19 2019 as: nmap -oN results.txt --append-output -p 1-500 100.24.51.217
+Nmap scan report for ec2-100-24-51-217.compute-1.amazonaws.com (100.24.51.217)
+Host is up (0.067s latency).
+Not shown: 497 filtered ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+443/tcp open  https
+
+# Nmap done at Tue Oct 22 12:22:24 2019 -- 1 IP address (1 host up) scanned in 5.59 seconds
