@@ -50,6 +50,6 @@ The Hackerrank challenge code is in the ccValidation.py file which uses the cc.t
 
 ## What I learned
 
-I learned how to set up an s3 bucket with Cloud front, how to set up auto scaling ec2 instances, a load balancer, aws lambda functions, and AWS Lightsail.  
+I learned how to set up an s3 bucket with Cloud front, how to set up auto scaling ec2 instances, a load balancer, AWS lambda functions, and AWS Lightsail.  
 
 The output of the terminal is in the output.txt file.
