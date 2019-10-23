@@ -1,9 +1,9 @@
 Terrys-MacBook-Pro:Terry_Challenge terry$ ./launchEC2.sh
 
 
-Instance ID = i-046222f90c6f9037b
+Instance ID = i-0da76f198ac12cfd7
 
-IP address = 34.228.238.208
+IP address = 54.162.248.26
 
 Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 4.15.0-1051-aws x86_64)
 
@@ -11,11 +11,11 @@ Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 4.15.0-1051-aws x86_64)
  * Management:     https://landscape.canonical.com
  * Support:        https://ubuntu.com/advantage
 
-  System information as of Tue Oct 22 16:46:16 UTC 2019
+  System information as of Wed Oct 23 12:54:28 UTC 2019
 
-  System load:  0.13              Processes:           89
+  System load:  0.02              Processes:           88
   Usage of /:   13.6% of 7.69GB   Users logged in:     0
-  Memory usage: 25%               IP address for eth0: 172.31.36.1
+  Memory usage: 25%               IP address for eth0: 172.31.40.167
   Swap usage:   0%
 
 0 packages can be updated.
@@ -58,7 +58,7 @@ Get:25 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 Packages
 Get:26 http://security.ubuntu.com/ubuntu bionic-security/universe Translation-en [205 kB]
 Get:27 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 Packages [5476 B]
 Get:28 http://security.ubuntu.com/ubuntu bionic-security/multiverse Translation-en [2500 B]
-Fetched 18.0 MB in 5s (3998 kB/s)
+Fetched 18.0 MB in 4s (4292 kB/s)
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -69,13 +69,15 @@ Suggested packages:
   rrdtool php5-cgi apache2-utils lighttpd-doc
 The following NEW packages will be installed:
   gamin libgamin0 lighttpd spawn-fcgi
-0 upgraded, 4 newly installed, 0 to remove and 22 not upgraded.
+0 upgraded, 4 newly installed, 0 to remove and 23 not upgraded.
 Need to get 350 kB of archives.
 After this operation, 1278 kB of additional disk space will be used.
 Get:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/universe amd64 libgamin0 amd64 0.1.10-5build1 [15.9 kB]
 Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/universe amd64 gamin amd64 0.1.10-5build1 [43.0 kB]
 Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 lighttpd amd64 1.4.45-1ubuntu3.18.04 [276 kB]
 Get:4 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/universe amd64 spawn-fcgi amd64 1.6.4-2 [14.9 kB]
+Fetched 350 kB in 0s (2142 kB/s)
+Selecting previously unselected package libgamin0.
 debconf: unable to initialize frontend: Dialog
 debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
 debconf: falling back to frontend: Readline
@@ -83,8 +85,6 @@ debconf: unable to initialize frontend: Readline
 debconf: (This frontend requires a controlling tty.)
 debconf: falling back to frontend: Teletype
 dpkg-preconfigure: unable to re-open stdin: 
-Fetched 350 kB in 0s (11.5 MB/s)
-Selecting previously unselected package libgamin0.
 (Reading database ... 56531 files and directories currently installed.)
 Preparing to unpack .../libgamin0_0.1.10-5build1_amd64.deb ...
 Unpacking libgamin0 (0.1.10-5build1) ...
@@ -107,53 +107,51 @@ Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
 Processing triggers for ufw (0.36-0ubuntu0.18.04.1) ...
 Processing triggers for ureadahead (0.100.0-21) ...
 Processing triggers for libc-bin (2.27-3ubuntu1) ...
-terrychallenge.com.pem                                                                                     100% 3038   122.0KB/s   00:00    
-terrychallenge.com.pem                                                                                     100% 3038   190.5KB/s   00:00    
-terrychallenge.com.pem                                                                                     100% 3038   212.6KB/s   00:00    
-lighttpd.conf                                                                                              100% 1272    76.5KB/s   00:00    
+terrychallenge.com.pem                                                                                     100% 3038   238.5KB/s   00:00    
+lighttpd.conf                                                                                              100% 1272   113.9KB/s   00:00    
 Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 4.15.0-1051-aws x86_64)
 
  * Documentation:  https://help.ubuntu.com
  * Management:     https://landscape.canonical.com
  * Support:        https://ubuntu.com/advantage
 
-  System information as of Tue Oct 22 16:46:48 UTC 2019
+  System information as of Wed Oct 23 12:56:40 UTC 2019
 
-  System load:  0.5               Processes:           90
+  System load:  0.15              Processes:           88
   Usage of /:   15.7% of 7.69GB   Users logged in:     0
-  Memory usage: 25%               IP address for eth0: 172.31.36.1
+  Memory usage: 25%               IP address for eth0: 172.31.40.167
   Swap usage:   0%
 
 
-26 packages can be updated.
-15 updates are security updates.
+27 packages can be updated.
+16 updates are security updates.
 
 
---2019-10-22 12:47:09--  http://34.228.238.208/
-Connecting to 34.228.238.208:80... connected.
+--2019-10-23 08:57:01--  http://54.162.248.26/
+Connecting to 54.162.248.26:80... connected.
 HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://34.228.238.208/ [following]
---2019-10-22 12:47:09--  https://34.228.238.208/
-Connecting to 34.228.238.208:443... connected.
-    WARNING: certificate common name ‘terrychallenge.com’ doesn't match requested host name ‘34.228.238.208’.
+Location: https://54.162.248.26/ [following]
+--2019-10-23 08:57:01--  https://54.162.248.26/
+Connecting to 54.162.248.26:443... connected.
+    WARNING: certificate common name ‘terrychallenge.com’ doesn't match requested host name ‘54.162.248.26’.
 HTTP request sent, awaiting response... 200 OK
 Length: 93 [text/html]
 Saving to: ‘index.html’
 
 index.html                          100%[================================================================>]      93  --.-KB/s    in 0s      
 
-2019-10-22 12:47:09 (1.64 MB/s) - ‘index.html’ saved [93/93]
+2019-10-23 08:57:01 (2.22 MB/s) - ‘index.html’ saved [93/93]
 
-Starting Nmap 7.80 ( https://nmap.org ) at 2019-10-22 12:47 EDT
-Nmap scan report for ec2-34-228-238-208.compute-1.amazonaws.com (34.228.238.208)
-Host is up (0.010s latency).
+Starting Nmap 7.80 ( https://nmap.org ) at 2019-10-23 08:57 EDT
+Nmap scan report for ec2-54-162-248-26.compute-1.amazonaws.com (54.162.248.26)
+Host is up (0.0100s latency).
 Not shown: 497 filtered ports
 PORT    STATE SERVICE
 22/tcp  open  ssh
 80/tcp  open  http
 443/tcp open  https
 
-Nmap done: 1 IP address (1 host up) scanned in 3.40 seconds
+Nmap done: 1 IP address (1 host up) scanned in 3.41 seconds
 
 
 webpage looks good!

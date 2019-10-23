@@ -22,14 +22,12 @@ ssh -o StrictHostKeyChecking=no -i "~/.ssh/terry_aws.pem" ubuntu@"$EC2_IP_ADDRES
 EOF
 
 scp -i "~/.ssh/terry_aws.pem" terrychallenge.com.pem  ubuntu@"$EC2_IP_ADDRESS":/home/ubuntu/terrychallenge.com.pem
-scp -i "~/.ssh/terry_aws.pem" terrychallenge.com.pem  ubuntu@"$EC2_IP_ADDRESS":/home/ubuntu/terrychallenge.com.crt
-scp -i "~/.ssh/terry_aws.pem" terrychallenge.com.pem  ubuntu@"$EC2_IP_ADDRESS":/home/ubuntu/terrychallenge.com.csr
+#scp -i "~/.ssh/terry_aws.pem" terrychallenge.com.pem  ubuntu@"$EC2_IP_ADDRESS":/home/ubuntu/terrychallenge.com.crt
+#scp -i "~/.ssh/terry_aws.pem" terrychallenge.com.pem  ubuntu@"$EC2_IP_ADDRESS":/home/ubuntu/terrychallenge.com.csr
 scp -i "~/.ssh/terry_aws.pem" lighttpd.conf  ubuntu@"$EC2_IP_ADDRESS":/home/ubuntu/lighttpd.conf
 
 ssh -o StrictHostKeyChecking=no -i "~/.ssh/terry_aws.pem" ubuntu@"$EC2_IP_ADDRESS" -yes << EOF
   sudo mv terrychallenge.com.pem /etc/lighttpd/certs
-  sudo mv terrychallenge.com.crt /etc/lighttpd/certs
-  sudo mv terrychallenge.com.csr /etc/lighttpd/certs
   sudo su
   sudo mv -f lighttpd.conf /etc/lighttpd
   sudo service lighttpd restart
@@ -63,6 +61,6 @@ then
   exit 1;
 fi
 
-printf "\n\nports look good!\n\n"
+printf "ports look good!\n\n"
 
 rm initial_aws.json
