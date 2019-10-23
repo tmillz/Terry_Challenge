@@ -22,8 +22,6 @@ ssh -o StrictHostKeyChecking=no -i "~/.ssh/terry_aws.pem" ubuntu@"$EC2_IP_ADDRES
 EOF
 
 scp -i "~/.ssh/terry_aws.pem" terrychallenge.com.pem  ubuntu@"$EC2_IP_ADDRESS":/home/ubuntu/terrychallenge.com.pem
-#scp -i "~/.ssh/terry_aws.pem" terrychallenge.com.pem  ubuntu@"$EC2_IP_ADDRESS":/home/ubuntu/terrychallenge.com.crt
-#scp -i "~/.ssh/terry_aws.pem" terrychallenge.com.pem  ubuntu@"$EC2_IP_ADDRESS":/home/ubuntu/terrychallenge.com.csr
 scp -i "~/.ssh/terry_aws.pem" lighttpd.conf  ubuntu@"$EC2_IP_ADDRESS":/home/ubuntu/lighttpd.conf
 
 ssh -o StrictHostKeyChecking=no -i "~/.ssh/terry_aws.pem" ubuntu@"$EC2_IP_ADDRESS" -yes << EOF
